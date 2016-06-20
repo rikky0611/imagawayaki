@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imagawayaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GbI-aQ-HTY"/>
+                        <viewControllerLayoutGuide type="bottom" id="0aD-JT-r6K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLV-TM-KhD">
+                                <rect key="frame" x="177" y="460" width="78" height="78"/>
+                                <color key="backgroundColor" red="1" green="0.71973838339999996" blue="0.98000832410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MLV-TM-KhD" secondAttribute="height" multiplier="1:1" id="DZa-i1-cSM"/>
+                                    <constraint firstAttribute="height" constant="78" id="NOb-c9-5Bx"/>
+                                </constraints>
+                                <state key="normal" title="勉強する">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="study" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKl-0A-Y9Z"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first.png" translatesAutoresizingMaskIntoConstraints="NO" id="J3X-ij-TtO">
+                                <rect key="frame" x="120" y="159" width="200" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="dPz-Aw-5UN"/>
+                                    <constraint firstAttribute="width" constant="200" id="iyN-mb-Ff0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdB-ta-n49">
+                                <rect key="frame" x="143" y="460" width="33.5" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="UY2-xh-dX3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-UE-DU6">
+                                <rect key="frame" x="10" y="30" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cnw-7l-Iq8"/>
+                                    <constraint firstAttribute="width" constant="75" id="nIN-SV-wgN"/>
+                                </constraints>
+                                <state key="normal" title="やりなおし">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EsR-Ev-p7w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不可０個" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgS-Xa-Kre">
+                                <rect key="frame" x="0.0" y="254" width="120" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GuG-8W-AIA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bv-y5-9uk" userLabel="Twitter Btn">
+                                <rect key="frame" x="250" y="30" width="60.5" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Bv-y5-9uk" secondAttribute="height" multiplier="29:24" id="7Sy-Qp-YwN"/>
+                                    <constraint firstAttribute="height" constant="50" id="VkX-fA-bzH"/>
+                                </constraints>
+                                <state key="normal" image="twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPostToTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQ7-2y-nrp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7da-pw-FW7">
+                                <rect key="frame" x="65" y="460" width="78" height="78"/>
+                                <color key="backgroundColor" red="0.86329386679999998" green="1" blue="0.74669730670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7da-pw-FW7" secondAttribute="height" multiplier="1:1" id="IYN-mE-qnE"/>
+                                    <constraint firstAttribute="height" constant="78" id="fF9-8U-jmE"/>
+                                </constraints>
+                                <state key="normal" title="サボる">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saboru" destination="BYZ-38-t0r" eventType="touchUpInside" id="jld-sg-Y6d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0aD-JT-r6K" firstAttribute="top" secondItem="MLV-TM-KhD" secondAttribute="bottom" constant="30" id="7VS-kB-ywC"/>
+                            <constraint firstItem="4Bv-y5-9uk" firstAttribute="top" secondItem="GbI-aQ-HTY" secondAttribute="bottom" constant="10" id="7e8-qi-Bgk"/>
+                            <constraint firstItem="J3X-ij-TtO" firstAttribute="leading" secondItem="GgS-Xa-Kre" secondAttribute="trailing" id="Cjf-f9-zDA"/>
+                            <constraint firstItem="GgS-Xa-Kre" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hma-mc-tZ8"/>
+                            <constraint firstItem="J3X-ij-TtO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X86-ks-gHN"/>
+                            <constraint firstAttribute="trailing" secondItem="4Bv-y5-9uk" secondAttribute="trailing" constant="10" id="emK-4N-YD4"/>
+                            <constraint firstAttribute="trailing" secondItem="J3X-ij-TtO" secondAttribute="trailing" id="fjB-Cz-gM6"/>
+                            <constraint firstItem="0aD-JT-r6K" firstAttribute="top" secondItem="7da-pw-FW7" secondAttribute="bottom" constant="30" id="iIq-hK-buB"/>
+                            <constraint firstAttribute="trailing" secondItem="MLV-TM-KhD" secondAttribute="trailing" constant="65" id="lym-aA-jin"/>
+                            <constraint firstItem="IdB-ta-n49" firstAttribute="leading" secondItem="7da-pw-FW7" secondAttribute="trailing" id="nkW-zh-0JH"/>
+                            <constraint firstItem="GgS-Xa-Kre" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q3S-k5-is8"/>
+                            <constraint firstItem="0aD-JT-r6K" firstAttribute="top" secondItem="IdB-ta-n49" secondAttribute="bottom" constant="30" id="qKK-yC-Cmm"/>
+                            <constraint firstItem="7da-pw-FW7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="65" id="rjc-Dm-CSx"/>
+                            <constraint firstItem="a1j-UE-DU6" firstAttribute="top" secondItem="GbI-aQ-HTY" secondAttribute="bottom" constant="10" id="trP-as-xBi"/>
+                            <constraint firstItem="MLV-TM-KhD" firstAttribute="leading" secondItem="IdB-ta-n49" secondAttribute="trailing" id="uVc-vR-fFO"/>
+                            <constraint firstItem="a1j-UE-DU6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="uqM-di-IAF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cntLabel" destination="GgS-Xa-Kre" id="ikq-Qm-GVw"/>
+                        <outlet property="imageView" destination="J3X-ij-TtO" id="gaP-rm-qih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first.png" width="356" height="400"/>
+        <image name="twitter" width="150" height="129"/>
+    </resources>
+</document>
